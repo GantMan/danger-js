@@ -44,7 +44,7 @@ matrix:
       - yarn add file:..
       - echo "warn('I warned you')" > dangerfile.js
       - echo "Testing a blank Dangerfile on an empty project"
-      - yarn danger -- run --text-only
+      - yarn danger --text-only
       - cd ..
       - rm -rf danger_blank_test
 
@@ -54,7 +54,7 @@ matrix:
       - yarn add file:..
       - echo "warn('Expect 2 warnings'); const a = async () => {warn('the other');}; schedule(a)" > dangerfile.js
       - echo "Testing a blank Dangerfile on a babel CRA project"
-      - yarn danger -- run --text-only
+      - yarn danger --text-only
       - cd ..
       - rm -rf danger_babel_test
 
